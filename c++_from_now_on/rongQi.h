@@ -14,5 +14,10 @@ class Vector  //向量
 public:
 	void print_2_to_n();
 };
+class List  //列表
+{
+public:
+	void listOperation();
+};
 
 #endif

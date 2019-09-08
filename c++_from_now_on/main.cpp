@@ -65,6 +65,8 @@ int main()
 
 	Vector vt;
 	vt.print_2_to_n();
+	List ls;
+	ls.listOperation();
 
 	end();
 	return 0;
