@@ -63,11 +63,12 @@ int main()
 	p = fbnq;      //Ö¸Ïòº¯Êıfbnq
 	cout << (*p)(20) << endl;*/
 
-	Vector vt;
+	/*Vector vt;
 	vt.print_2_to_n();
 	List ls;
-	ls.listOperation();
-
+	ls.listOperation();*/
+	Map m;
+	m.mapOperation();
 	end();
 	return 0;
 }

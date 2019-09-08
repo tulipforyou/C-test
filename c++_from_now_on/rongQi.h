@@ -6,6 +6,7 @@
 #include<vector>
 #include<deque>
 #include<list>
+#include<map>
 #include<iomanip>
 using namespace std;
 
@@ -18,6 +19,11 @@ class List  //ап╠М
 {
 public:
 	void listOperation();
+};
+class Map
+{
+public:
+	void mapOperation();
 };
 
 #endif
