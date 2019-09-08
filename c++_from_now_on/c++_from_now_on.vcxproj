@@ -83,12 +83,14 @@
     <ClCompile Include="jicheng.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="random.cpp" />
+    <ClCompile Include="rongQi.cpp" />
     <ClCompile Include="timeSch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="first_cpp.h" />
     <ClInclude Include="jicheng.h" />
     <ClInclude Include="random.h" />
+    <ClInclude Include="rongQi.h" />
     <ClInclude Include="timeSch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

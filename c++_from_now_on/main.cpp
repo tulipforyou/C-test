@@ -62,7 +62,7 @@ int main()
 	p = fbnq;      //Ö¸Ïòº¯Êıfbnq
 	cout << (*p)(20) << endl;*/
 
-	haha
+	
 
 	end();
 	return 0;

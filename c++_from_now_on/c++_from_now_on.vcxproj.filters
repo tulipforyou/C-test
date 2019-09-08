@@ -30,6 +30,9 @@
     <ClCompile Include="jicheng.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="rongQi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="first_cpp.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="jicheng.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rongQi.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
