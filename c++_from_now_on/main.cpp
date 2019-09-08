@@ -12,6 +12,7 @@
 #include"random.h"
 #include"timeSch.h"
 #include"jicheng.h"
+#include"rongQi.h"
 using namespace std;
 
 char beep = 7;  //ÏìÁå
@@ -62,7 +63,8 @@ int main()
 	p = fbnq;      //Ö¸Ïòº¯Êıfbnq
 	cout << (*p)(20) << endl;*/
 
-	
+	Vector vt;
+	vt.print_2_to_n();
 
 	end();
 	return 0;
