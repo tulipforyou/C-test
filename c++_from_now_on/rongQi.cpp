@@ -20,11 +20,15 @@ void Vector::print_2_to_n()
 		while (k <= j / 2 && j % k != 0)	k += 2;
 		if (k > j / 2	)A[primeCount++] = j;
 	}
+	//两种输出方式，注意不同之处
 	for (int i = 0; i < primeCount; i++)
 	{
 		cout << setw(5) << A[i];
 		if ((i + 1) % 6 == 0)	cout << endl;
 	}
+	cout << endl;
+	for (vector<int>::iterator intVector = A.begin(); intVector != A.end(); intVector++)
+		cout << *intVector << '\t';
 	cout << endl;
 }
 

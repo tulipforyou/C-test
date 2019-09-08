@@ -9,7 +9,7 @@
 #include<iomanip>
 using namespace std;
 
-class Vector
+class Vector  //œÚ¡ø
 {
 public:
 	void print_2_to_n();
