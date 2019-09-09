@@ -41,7 +41,6 @@ template <typename T> T Max(T num1, T num2)
 	return (num1 > num2 ? num1 : num2);
 }
 //函数模板的特化
-//见主函数
 template<>inline const char* Max<const char*>(const char* a, const char* b)
 {
 	return (strcmp(a, b) < 0 ? b : a);
