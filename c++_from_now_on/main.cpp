@@ -13,6 +13,7 @@
 #include"timeSch.h"
 #include"jicheng.h"
 #include"rongQi.h"
+#include"templateTest.h"
 using namespace std;
 
 char beep = 7;  //œÏ¡Â
@@ -66,9 +67,18 @@ int main()
 	/*Vector vt;
 	vt.print_2_to_n();
 	List ls;
-	ls.listOperation();*/
+	ls.listOperation();
 	Map m;
-	m.mapOperation();
+	m.mapOperation();*/
+
+	//ƒ£∞Â≤‚ ‘≥Ã–Ú
+	/*Pair<int> pi1(24, 560);
+	cout << pi1.getMax() << endl;
+	Pair<float> pi2(2.4, 5.60);
+	cout << pi2.getMax() << endl;
+	Pair<char> pi3('g', 'h');
+	cout << pi3.getMax() << endl;*/
+
 	end();
 	return 0;
 }

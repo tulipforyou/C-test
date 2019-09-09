@@ -33,6 +33,9 @@
     <ClCompile Include="rongQi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="templateTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="first_cpp.h">
@@ -48,6 +51,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="rongQi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="templateTest.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
