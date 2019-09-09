@@ -32,6 +32,8 @@ int getLen(T& array)
 {
 	return (sizeof(array) / sizeof(array[0]));
 }
+//函数模板的特化
+
 
 int main()
 {
@@ -78,6 +80,11 @@ int main()
 	cout << pi2.getMax() << endl;
 	Pair<char> pi3('g', 'h');
 	cout << pi3.getMax() << endl;*/
+	
+	cout << Max(56, 89) << endl;
+	const char* a = "dsgff";
+	const char* b = "dsghngf";
+	cout << Max(a, b) << endl;
 
 	end();
 	return 0;
