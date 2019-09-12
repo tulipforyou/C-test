@@ -16,6 +16,7 @@
 #include"templateTest.h"
 #include"exceptionTest.h"
 #include"algorithmTest.h"
+#include"fileTest.h"
 using namespace std;
 
 char beep = 7;  //œÏ¡Â
