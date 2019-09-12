@@ -14,6 +14,7 @@
 #include"jicheng.h"
 #include"rongQi.h"
 #include"templateTest.h"
+#include"algorithmTest.h"
 using namespace std;
 
 char beep = 7;  //œÏ¡Â
@@ -81,10 +82,14 @@ int main()
 	Pair<char> pi3('g', 'h');
 	cout << pi3.getMax() << endl;*/
 	
-	cout << Max(56, 89) << endl;
+	/*cout << Max(56, 89) << endl;
 	const char* a = "dsgff";
 	const char* b = "dsghngf";
-	cout << Max(a, b) << endl;
+	cout << Max(a, b) << endl;*/
+
+	algorithmTest at;
+	vector<int> v1(10);
+	at.operation(v1);
 
 	end();
 	return 0;
