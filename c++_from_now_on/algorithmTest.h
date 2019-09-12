@@ -1,8 +1,8 @@
 #pragma once
 #ifndef _ALGORITHMTEST_H
 #define _ALGORITHMTEST_H
-#include"iostream"
-#include"algorithm"
+#include<iostream>
+#include<algorithm>
 using namespace std;
 
 class algorithmTest
@@ -45,5 +45,8 @@ void algorithmTest::operation(T& vc)
 	replace(vc.begin(), vc.end() - 5, 's','k');
 	cout << "替换结果：" << endl;
 	show(vc);
+
+	cout << "查询算法：" << endl;
+	cout << "查询位置：" << int(find(vc.begin(), vc.end(), 's')-vc.begin())<< endl;
 }
 

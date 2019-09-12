@@ -80,6 +80,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="algorithmTest.cpp" />
+    <ClCompile Include="exceptionTest.cpp" />
     <ClCompile Include="first_cpp.cpp" />
     <ClCompile Include="jicheng.cpp" />
     <ClCompile Include="main.cpp" />
@@ -90,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="algorithmTest.h" />
+    <ClInclude Include="exceptionTest.h" />
     <ClInclude Include="first_cpp.h" />
     <ClInclude Include="jicheng.h" />
     <ClInclude Include="random.h" />

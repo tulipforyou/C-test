@@ -14,6 +14,7 @@
 #include"jicheng.h"
 #include"rongQi.h"
 #include"templateTest.h"
+#include"exceptionTest.h"
 #include"algorithmTest.h"
 using namespace std;
 
