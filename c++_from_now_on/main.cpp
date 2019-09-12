@@ -89,9 +89,12 @@ int main()
 	const char* b = "dsghngf";
 	cout << Max(a, b) << endl;*/
 
-	algorithmTest at;
+	/*algorithmTest at;
 	vector<int> v1(10);
-	at.operation(v1);
+	at.operation(v1);*/
+
+	fileTest ft;
+	ft.openFileAndOperation("sch.txt");
 
 	end();
 	return 0;
