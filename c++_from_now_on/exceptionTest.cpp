@@ -49,3 +49,23 @@ void trendsMeory()
 	cout << endl;
 	delete [] p3;
 }
+
+void signalHandle(int signum)
+{
+	cout << signum << " getted!" << endl;
+	exit(signum);
+}
+
+void test()
+{
+	// 注册信号 SIGINT 和信号处理程序
+	signal(SIGINT, signalHandle);
+	int i = 0;
+	while (++i)
+	{
+		cout << "Had sleep " << i << "(s)！" << endl;
+		Sleep(1 * 1000);
+		if(i==5)
+			raise(SIGINT);
+	}
+}

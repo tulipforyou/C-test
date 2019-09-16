@@ -4,6 +4,8 @@
 
 #include<iostream>
 #include<exception>
+#include<csignal>
+#include<windows.h>
 using namespace std;
 
 //自定义异常
@@ -18,5 +20,9 @@ public:
 void myExceptionTest();
 //动态内存
 void trendsMeory();
+//信号处理
+void signalHandle(int signum);
+void test();
+
 
 #endif

@@ -97,7 +97,8 @@ int main()
 	ft.openFileAndOperation("sch.txt");*/
 
 	//myExceptionTest();
-	trendsMeory();
+	//trendsMeory();
+	test();
 
 	end();
 	return 0;
