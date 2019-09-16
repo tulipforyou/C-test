@@ -93,8 +93,11 @@ int main()
 	vector<int> v1(10);
 	at.operation(v1);*/
 
-	fileTest ft;
-	ft.openFileAndOperation("sch.txt");
+	/*fileTest ft;
+	ft.openFileAndOperation("sch.txt");*/
+
+	//myExceptionTest();
+	trendsMeory();
 
 	end();
 	return 0;
