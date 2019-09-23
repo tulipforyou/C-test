@@ -45,6 +45,9 @@
     <ClCompile Include="fileTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MySQLManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="first_cpp.h">
@@ -72,6 +75,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="fileTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

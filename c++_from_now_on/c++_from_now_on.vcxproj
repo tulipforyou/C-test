@@ -85,6 +85,7 @@
     <ClCompile Include="first_cpp.cpp" />
     <ClCompile Include="jicheng.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MySQLManager.cpp" />
     <ClCompile Include="random.cpp" />
     <ClCompile Include="rongQi.cpp" />
     <ClCompile Include="templateTest.cpp" />
@@ -96,6 +97,7 @@
     <ClInclude Include="fileTest.h" />
     <ClInclude Include="first_cpp.h" />
     <ClInclude Include="jicheng.h" />
+    <ClInclude Include="MySQLManager.h" />
     <ClInclude Include="random.h" />
     <ClInclude Include="rongQi.h" />
     <ClInclude Include="templateTest.h" />

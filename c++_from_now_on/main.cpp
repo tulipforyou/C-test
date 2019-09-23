@@ -17,6 +17,8 @@
 #include"exceptionTest.h"
 #include"algorithmTest.h"
 #include"fileTest.h"
+#include<sstream>
+#include "MySQLManager.h"
 using namespace std;
 
 char beep = 7;  //响铃
@@ -37,11 +39,9 @@ int getLen(T& array)
 }
 //函数模板的特化
 
-
 int main()
 {
 	start();
-
 	//annual();
 	//achievement();
 
@@ -98,11 +98,47 @@ int main()
 
 	//myExceptionTest();
 	//trendsMeory();
-	test();
+	//test();
+
+	/*vector<int> v;
+	vector<int> ::iterator iter;
+	v.reserve(20);
+	for (int i = 0; i < 20; i++)
+	{
+		v.push_back(i);
+	}
+	cout << v.size() << endl;
+
+	cout << "1:" << endl;
+	for (iter=v.begin(); iter!=v.end(); iter++)
+	{
+		cout << *iter << " ";
+	}
+	cout << endl;
+
+	v[5] = v[9] = v[15] = 99;
+	cout << "2:" << endl;
+	for (iter = v.begin(); iter != v.end(); iter++)
+	{
+		cout << *iter << " ";
+	}
+	cout << endl;
+
+	v.erase(remove(v.begin(), v.end(), 99), v.end());
+	cout << "3:" << endl;
+	for (iter = v.begin(); iter != v.end(); ++iter)
+	{
+		cout << *iter << " ";
+	}
+	cout << endl;
+	cout << v.size() << endl;*/
+	
+
 
 	end();  
 	return 0;
 }
+
 
 void annual()
 {
