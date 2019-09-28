@@ -9,12 +9,23 @@ bool MySQLManager::Init(ConnectionInfo& info)
     // 初始化mysql,连接mysql，数据库
     mysql_init(&m_mysql);
 
+	//设置数据库字符集为GBK防止中文乱码
+	if (0 == mysql_options(&m_mysql, MYSQL_SET_CHARSET_NAME, "gbk"))//设置字符集
+	{
+		cout << endl;
+	}
+
     // 连接失败
     if (!(mysql_real_connect(&m_mysql, info.host, info.user, info.password, info.database, info.port, info.unix_socket, info.clientflag)))
     {
-        return false;
+		cout << "接入数据库失败\n\n" << endl;
+		return false;
     }
-
+	else
+	{
+		cout << "接入数据库成功\n\n" << endl;
+		return true;
+	}
     return true;
 }
 

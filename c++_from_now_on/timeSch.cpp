@@ -30,3 +30,13 @@ int timeSch::getS()
 timeSch::~timeSch()
 {
 }
+
+void timeSch::remindMe()
+{
+	SYSTEMTIME sys;
+	GetLocalTime(&sys);
+	if (sys.wHour > 22 || sys.wHour < 5)
+		cout << "\n--------------------------------星星都睡了，你还在工作吗？--------------------------------\n" << endl;
+	cout << "当前时间为：";
+	printf("%4d/%02d/%02d %02d:%02d:%02d.%03d 星期%1d\n", sys.wYear, sys.wMonth, sys.wDay, sys.wHour, sys.wMinute, sys.wSecond, sys.wMilliseconds, sys.wDayOfWeek);
+}

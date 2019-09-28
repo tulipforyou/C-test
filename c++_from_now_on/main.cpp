@@ -19,6 +19,8 @@
 #include"fileTest.h"
 #include<sstream>
 #include "MySQLManager.h"
+#include"windows.h"
+#include<conio.h>
 using namespace std;
 
 char beep = 7;  //响铃
@@ -28,6 +30,7 @@ void achievement();
 void sort1(int array[],int n);
 int fbnq(int n);
 void copystr(char* str1, char* str2);
+int mysql_test();
 
 /*
 求数组长度的模板
@@ -42,6 +45,8 @@ int getLen(T& array)
 int main()
 {
 	start();
+	timeSch ts;
+	ts.remindMe();
 	//annual();
 	//achievement();
 
@@ -133,12 +138,79 @@ int main()
 	cout << endl;
 	cout << v.size() << endl;*/
 	
-
+	
+	
+	mysql_test();
 
 	end();  
 	return 0;
 }
 
+int mysql_test()
+{
+	MySQLManager mysql;
+	ConnectionInfo info;
+	// 填充ConnectionInfo这个结构体，项目中一般从配置文件这读取
+	char root[256];
+	char password[256];
+
+	cout << "输入用户名和密码以进入数据库：" << endl;
+	cin.getline(root,256); 
+	//cin.getline(password, 256);
+	char ch;
+	int i = 0;
+	while ((ch = _getch()) != '\r')
+	{
+		if (ch == '\b' && i > 0)//退格
+		{
+			printf("\b \b");
+			i--;
+		}
+		else
+		{
+			password[i++] = ch;
+			cout << '*';
+		}
+	}
+	password[i] = '\0';
+	cout << endl;
+
+	info.user = root;
+	info.password = password;
+	info.host = "localhost";
+	info.port = 3306;
+	info.database = "test";
+	info.unix_socket = NULL;
+	info.clientflag = 0;
+
+	// mysql连接
+	if (!mysql.Init(info))
+	{
+		return -1;
+	}
+
+	// 增加数据测试
+	const char* sql1 = "insert into testforc values (NULL, 'Ada', 'password')";
+	mysql.ExecuteSql(sql1);
+
+	// 删除数据测试
+	const char* sql2 = "delete from testforc where name = 'Ada'";
+	mysql.ExecuteSql(sql2);
+
+	// 修改数据测试
+	const char* sql3 = "update testforc set password='update_password' where name = '王浩颖'";
+	mysql.ExecuteSql(sql3);
+
+	// 查询数据测试
+	const char* sql4 = "select * from testforc";
+	mysql.QueryData(sql4);
+
+	//打印数据库
+	mysql.PrintQueryRes();
+
+	// 释放mysql资源
+	mysql.FreeConnect();
+}
 
 void annual()
 {
